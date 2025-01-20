@@ -1,0 +1,663 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+.poppins-light {
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* google fonts */
+
+/* css reset code */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* common styles */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* HEADER SECTION STYLES */
+header {
+  width: 100%;
+  height: fit-content;
+  padding-bottom: 4rem;
+}
+
+/* navbar */
+header nav {
+  width: 100%;
+  height: 9rem;
+  /* background-color: yellow; */
+}
+
+header nav .container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: red; */
+}
+
+header nav .container > i {
+  font-size: 1.6rem;
+  display: none;
+}
+
+header nav .container h3 {
+  font-size: 2.4rem;
+  color: #3a3a3a;
+  text-transform: capitalize;
+}
+
+header nav .container ul {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+header nav .container ul li {
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: #3a3a3a;
+  list-style-type: none;
+}
+
+/* banner section styles */
+#banner {
+  width: 100%;
+  height: fit-content;
+  /* background-color: green; */
+}
+
+#banner .container {
+  height: fit-content;
+}
+
+#banner .container .banner-content {
+  width: 100%;
+  height: calc(100vh - 9rem);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#banner .container .banner-content .left {
+  width: 50%;
+  height: fit-content;
+  /* background-color: yellow; */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#banner .container .banner-content .left h1 {
+  font-size: 5.2rem;
+  font-weight: bold;
+  line-height: 1.1;
+  color: #3a3a3a;
+}
+
+#banner .container .banner-content .left p {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #3a3a3a;
+}
+
+#banner .container .banner-content .left .btn {
+  width: fit-content;
+  padding: 1.2rem 3rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #3a3a3a;
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  color: #fff;
+  background-color: #e02c6d;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#banner .container .banner-content .right {
+  width: 50%;
+  height: 100%;
+  background-image: url(images/Circle\ design.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* brand container */
+
+#banner .container .brand {
+  width: 100%;
+  padding: 5rem 0;
+  /* border: 1px solid red; */
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1) inset,
+    0px 1px 1px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+
+#banner .container .brand .brand-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+#banner .container .brand .brand-container img {
+  filter: grayscale(100);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+#banner .container .brand .brand-container img:hover {
+  filter: grayscale(0);
+}
+
+/* MAIN SECTION STYLES */
+#products {
+  width: 100%;
+  height: fit-content;
+  padding: 10rem 0 8rem 0;
+}
+
+#products .container .heading-text {
+  width: 100%;
+}
+
+#products .container .heading-text h1 {
+  font-size: 3.5rem;
+  color: #3a3a3a;
+  text-align: center;
+}
+
+#products .container .products-container {
+  margin-top: 10rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 4rem;
+}
+
+#products .container .products-container .product {
+  width: 31%;
+  height: fit-content;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+}
+
+#products .container .products-container .product .image-box {
+  width: 100%;
+  height: 280px;
+}
+
+#products .container .products-container .product .image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+#products .container .products-container .product .text-box {
+  margin-top: 2rem;
+}
+
+#products .container .products-container .product .text-box .card-title {
+  margin-bottom: 1.5rem;
+  color: #3a3a3a;
+}
+
+#products .container .products-container .product .text-box .card-title h3 {
+  font-size: 2.8rem;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+#products .container .products-container .product .text-box .card-title h4 {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+#products .container .products-container .product .text-box .icons {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+  color: #3a3a3a;
+}
+
+#products .container .products-container .product .text-box .icons .icon-box {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  gap: 0.4rem;
+}
+
+#products .container .products-container .product .text-box .icons .icon-box i {
+  color: gold;
+  font-size: 1.6rem;
+}
+
+#products .container .products-container .product .text-box p {
+  font-size: 1.6rem;
+  color: #3a3a3a;
+}
+
+#products .container .see-more {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 6rem;
+  font-size: 2rem;
+  gap: 0.7rem;
+  color: #e02c6d;
+}
+
+#products .container .see-more a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #e02c6d;
+}
+
+#products .container .see-more i {
+  margin-top: 0.25rem;
+}
+
+/* featured section */
+#featured {
+  width: 100%;
+  height: fit-content;
+  padding: 5rem 0 10rem 0;
+}
+#featured .container {
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#featured .container .left {
+  width: 45%;
+  height: fit-content;
+}
+
+#featured .container .left img {
+  width: 100%;
+  height: fit-content;
+}
+
+#featured .container .right {
+  width: 50%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#featured .container .right h1 {
+  font-size: 3rem;
+  line-height: 1;
+  color: #3a3a3a;
+}
+
+#featured .container .right p {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #6c6c6c;
+}
+
+#featured .container .right button {
+  width: fit-content;
+  border: none;
+  border-radius: none;
+  background-color: #e02c6d;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.6rem;
+  padding: 1.3rem 3rem;
+}
+
+/* footer section styles */
+footer {
+  width: 100%;
+  height: fit-content;
+  padding: 6rem 0;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .footer-content {
+  text-align: center;
+}
+
+footer .footer-content .text-box {
+  margin-bottom: 1.5rem;
+}
+
+footer .footer-content .text-box h1 {
+  font-size: 2.8rem;
+  text-transform: capitalize;
+}
+
+footer .footer-content .text-box p {
+  font-size: 1.6rem;
+}
+
+footer .footer-content .icon-box {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 2rem;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 50%;
+  }
+
+  /* navbar */
+  header nav {
+    width: 100%;
+    height: 9rem;
+  }
+
+  header nav .container > i {
+    display: block;
+  }
+
+  header nav .container h3 {
+    font-size: 2.4rem;
+  }
+
+  header nav .container ul {
+    display: none !important;
+  }
+  /* banner section styles */
+  #banner {
+    width: 100%;
+    height: fit-content;
+  }
+
+  #banner .container {
+    height: fit-content;
+  }
+
+  #banner .container .banner-content {
+    padding: 5rem 0 0 0;
+    height: fit-content;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  #banner .container .banner-content .left {
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #banner .container .banner-content .left h1 {
+    font-size: 4.5rem;
+  }
+
+  #banner .container .banner-content .left p {
+    padding: 0 3rem;
+  }
+
+  #banner .container .banner-content .right {
+    width: 100%;
+    height: fit-content;
+    background-size: 85%;
+    padding: 4rem;
+  }
+
+  #banner .container .banner-content .right img {
+    width: 90%;
+  }
+
+  /* brand container */
+  #banner .container .brand .brand-container {
+    width: 100%;
+    /* gap: 2rem; */
+  }
+
+  /* products section */
+  #products .container .products-container {
+    flex-direction: column;
+  }
+
+  #products .container .products-container .product {
+    width: 90%;
+  }
+
+  #products .container .see-more {
+    width: 93%;
+  }
+
+  /* featured section */
+  #featured .container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  #featured .container .left {
+    width: 100%;
+    height: fit-content;
+  }
+
+  #featured .container .right {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  html {
+    font-size: 52%;
+  }
+
+  /* navbar */
+  header nav {
+    width: 100%;
+    height: 9rem;
+  }
+
+  header nav .container > i {
+    display: none;
+  }
+
+  header nav .container h3 {
+    font-size: 2.4rem;
+  }
+  /* banner section styles */
+  #banner {
+    width: 100%;
+    height: fit-content;
+  }
+
+  #banner .container {
+    height: fit-content;
+  }
+
+  #banner .container .banner-content {
+    padding: 5rem 0 0 0;
+    height: fit-content;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  #banner .container .banner-content .left {
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #banner .container .banner-content .left h1 {
+    font-size: 5.5rem;
+  }
+
+  #banner .container .banner-content .left p {
+    font-size: 2rem;
+  }
+
+  #banner .container .banner-content .right {
+    width: 100%;
+    height: fit-content;
+    background-size: 76%;
+    padding: 4rem;
+  }
+
+  #banner .container .banner-content .right img {
+    width: 80%;
+  }
+
+  /* featured section */
+  #featured .container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  #featured .container .left {
+    width: 100%;
+    height: fit-content;
+  }
+
+  #featured .container .right {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  /* MAIN SECTION STYLES */
+  #products .container .products-container .product {
+    width: 47.5%;
+    height: fit-content;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  html {
+    font-size: 60%;
+  }
+
+  /* navbar */
+  header nav {
+    width: 100%;
+    height: 9rem;
+  }
+
+  header nav .container > i {
+    display: none;
+  }
+
+  header nav .container h3 {
+    font-size: 2.4rem;
+  }
+  /* banner section styles */
+  #banner {
+    width: 100%;
+    height: fit-content;
+  }
+
+  #banner .container {
+    height: fit-content;
+  }
+
+  #banner .container .banner-content {
+    padding: 5rem 0 0 0;
+    height: fit-content;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  #banner .container .banner-content .left {
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #banner .container .banner-content .left h1 {
+    font-size: 6.5rem;
+  }
+
+  #banner .container .banner-content .left p {
+    font-size: 1.8rem;
+  }
+
+  #banner .container .banner-content .right {
+    width: 100%;
+    height: fit-content;
+    background-size: 58%;
+    padding: 4rem;
+  }
+
+  #banner .container .banner-content .right img {
+    width: 60%;
+  }
+}
